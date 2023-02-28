@@ -42,7 +42,7 @@ begin
 -- Experiments on your own: LED(7:4) indicators
 
 -- Turn LED(4) on if input value is equal to 0, ie "0000"
--- LED(4) <= `0` when WRITE YOUR CODE HERE
+    LED(4) <= `0` when 
 
 -- Turn LED(5) on if input value is greater than "1001", ie 10, 11, 12, ...
 -- LED(5) <= WRITE YOUR CODE HERE
