@@ -37,7 +37,7 @@
     		  "0";
 	-- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
 	LED(6) <= "1" when (SW(0) = "1") else
-    		  "0";
+       		  "0";
 	-- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
 	LED(7) <= "1" when (SW = "0001") else
     		  "1" when (SW = "0010") else
