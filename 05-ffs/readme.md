@@ -27,7 +27,7 @@ begin
 				s_q = not(s_q);
             end if;
         end if;
-    end process p_t_ff_rst;
+    end process p_jk_ff_rst;
     -- Output ports are permanently connected to local signal
     q     <= s_q;
     q_bar <= not s_q;
