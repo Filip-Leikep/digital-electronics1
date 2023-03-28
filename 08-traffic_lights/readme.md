@@ -14,11 +14,11 @@
     p_traffic_fsm : process(clk) is
     begin
         if (rising_edge(clk)) then
-			if (rst = '1') then                    -- Synchronous reset
-			sig_state <= WEST_STOP;              -- Init state
-			sig_cnt   <= c_ZERO;                 -- Clear delay counter
-			elsif (sig_en = '1') then
-			case sig_state is
+          if (rst = '1') then                    -- Synchronous reset
+          sig_state <= WEST_STOP;              -- Init state
+          sig_cnt   <= c_ZERO;                 -- Clear delay counter
+          elsif (sig_en = '1') then
+          case sig_state is
 
           when WEST_STOP =>
             if (sig_cnt < c_DELAY_2SEC) then
