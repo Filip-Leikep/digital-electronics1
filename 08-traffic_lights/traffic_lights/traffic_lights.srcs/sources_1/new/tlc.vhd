@@ -115,7 +115,7 @@ begin
             if (sig_cnt < c_DELAY_2SEC) then
               sig_cnt <= sig_cnt + 1;
             else
-              sig_state <= WEST_GO;
+              sig_state <= SOUTH_GO;
               sig_cnt <= c_ZERO;
             end if;
 
@@ -123,7 +123,7 @@ begin
             if (sig_cnt < c_DELAY_4SEC) then
               sig_cnt <= sig_cnt + 1;
             else
-              sig_state <= WEST_WAIT;
+              sig_state <= SOUTH_WAIT;
               sig_cnt <= c_ZERO;
             end if;
 
